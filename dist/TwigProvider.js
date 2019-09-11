@@ -2,17 +2,9 @@
 
 exports.default = void 0;
 
-function _Slix() {
-  const data = require("slix-app/dist/Slix");
-
-  _Slix = function () {
-    return data;
-  };
-
-  return data;
-}
-
 var _Twig = require("./core/Twig");
+
+let Slix = require('slix-app').Slix;
 
 let AbstractProvider = require('slix-app').AbstractProvider;
 
