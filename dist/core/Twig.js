@@ -2,29 +2,9 @@
 
 exports.default = void 0;
 
-function _Response() {
-  const data = require("slix-app/src/core/response/Response");
-
-  _Response = function () {
-    return data;
-  };
-
-  return data;
-}
-
 var _EventRenderingPreparation = require("../event/EventRenderingPreparation");
 
 var _TwigEvent = require("../event/TwigEvent");
-
-function _Slix() {
-  const data = require("slix-app/src/Slix");
-
-  _Slix = function () {
-    return data;
-  };
-
-  return data;
-}
 
 let twigLib = require('twig');
 
@@ -57,7 +37,7 @@ class Twig {
           reject(err);
         }
 
-        resolve(new (_Response().default)(html, 200));
+        resolve(new Response(html, 200));
       });
     });
   }

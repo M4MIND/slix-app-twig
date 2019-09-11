@@ -1,5 +1,3 @@
-import Slix from 'slix-app/src/Slix';
-import AbstractProvider from "slix-app/src/api/AbstractProvider";
 import Twig from './core/Twig'
 
 let pathLib = require('path');
