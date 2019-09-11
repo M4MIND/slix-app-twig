@@ -3,7 +3,7 @@
 exports.default = void 0;
 
 function _AbstractEvent() {
-  const data = require("slix-app/src/api/AbstractEvent");
+  const data = require("slix-app/dist/api/AbstractEvent");
 
   _AbstractEvent = function () {
     return data;

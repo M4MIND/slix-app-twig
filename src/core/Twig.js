@@ -1,4 +1,4 @@
-import Response from "slix-app/src/core/response/Response";
+import Response from "slix-app/dist/core/response/Response";
 import EventRenderingPreparation from "../event/EventRenderingPreparation";
 import TwigEvent from "../event/TwigEvent";
 

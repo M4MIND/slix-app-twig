@@ -2,7 +2,7 @@
   "name": "slix-twig-provider",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "npx gulp dev"
   },

@@ -3,7 +3,7 @@
 exports.default = void 0;
 
 function _Slix() {
-  const data = require("slix-app/src/Slix");
+  const data = require("slix-app/dist/Slix");
 
   _Slix = function () {
     return data;
@@ -13,7 +13,7 @@ function _Slix() {
 }
 
 function _AbstractProvider() {
-  const data = require("slix-app/src/api/AbstractProvider");
+  const data = require("slix-app/dist/api/AbstractProvider");
 
   _AbstractProvider = function () {
     return data;

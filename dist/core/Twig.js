@@ -3,7 +3,7 @@
 exports.default = void 0;
 
 function _Response() {
-  const data = require("slix-app/src/core/response/Response");
+  const data = require("slix-app/dist/core/response/Response");
 
   _Response = function () {
     return data;

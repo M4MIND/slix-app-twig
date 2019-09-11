@@ -1,4 +1,4 @@
-import AbstractEvent from "slix-app/src/api/AbstractEvent";
+import AbstractEvent from "slix-app/dist/api/AbstractEvent";
 
 export default class EventRenderingPreparation extends AbstractEvent {
     constructor(request = null, data = {}) {
