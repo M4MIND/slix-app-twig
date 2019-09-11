@@ -2,11 +2,31 @@
 
 exports.default = void 0;
 
+function _Slix() {
+  const data = require("slix-app/src/Slix");
+
+  _Slix = function () {
+    return data;
+  };
+
+  return data;
+}
+
+function _AbstractProvider() {
+  const data = require("slix-app/src/api/AbstractProvider");
+
+  _AbstractProvider = function () {
+    return data;
+  };
+
+  return data;
+}
+
 var _Twig = require("./core/Twig");
 
 let pathLib = require('path');
 
-class TwigProvider extends AbstractProvider {
+class TwigProvider extends _AbstractProvider().default {
   /**
    * @param {Slix} App
    **/
