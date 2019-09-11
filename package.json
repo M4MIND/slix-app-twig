@@ -1,0 +1,43 @@
+{
+  "name": "slix-twig-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4MIND/slix-twig-provider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M4MIND/slix-twig-provider/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-transform-flow-comments": "^7.4.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.0",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.2",
+    "babel-plugin-add-jsdoc-properties": "^0.1.4",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-inline-json-import": "^0.3.2",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "twig": "^1.13.3",
+    "slix-app": "^1.0.29"
+  },
+  "homepage": "https:1//github.com/M4MIND/slix-twig-provider#readme"
+}
