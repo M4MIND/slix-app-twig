@@ -1,6 +1,6 @@
 {
   "name": "slix-twig-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -33,11 +33,11 @@
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-clean": "^0.4.0",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "slix-app": "^1.0.29"
   },
   "dependencies": {
-    "twig": "^1.13.3",
-    "slix-app": "^1.0.29"
+    "twig": "^1.13.3"
   },
   "homepage": "https:1//github.com/M4MIND/slix-twig-provider#readme"
 }
