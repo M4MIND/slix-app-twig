@@ -1,7 +1,7 @@
-import Response from "slix-app/dist/core/response/Response";
 import EventRenderingPreparation from "../event/EventRenderingPreparation";
 import TwigEvent from "../event/TwigEvent";
 
+let Response = require('slix-app').Response;
 let twigLib = require('twig');
 let pathLib = require('path');
 

@@ -1,7 +1,7 @@
 import Slix from 'slix-app/dist/Slix';
-import AbstractProvider from "slix-app/dist/api/AbstractProvider";
 import Twig from './core/Twig'
 
+let AbstractProvider = require('slix-app').AbstractProvider;
 let pathLib = require('path');
 
 export default class TwigProvider extends AbstractProvider {

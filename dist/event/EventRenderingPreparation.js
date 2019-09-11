@@ -2,17 +2,9 @@
 
 exports.default = void 0;
 
-function _AbstractEvent() {
-  const data = require("slix-app/dist/api/AbstractEvent");
+let AbstractEvent = require('slix-app').AbstractEvent;
 
-  _AbstractEvent = function () {
-    return data;
-  };
-
-  return data;
-}
-
-class EventRenderingPreparation extends _AbstractEvent().default {
+class EventRenderingPreparation extends AbstractEvent {
   constructor(request = null, data = {}) {
     super(request);
     this.data = data;

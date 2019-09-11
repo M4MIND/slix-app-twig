@@ -12,21 +12,13 @@ function _Slix() {
   return data;
 }
 
-function _AbstractProvider() {
-  const data = require("slix-app/dist/api/AbstractProvider");
-
-  _AbstractProvider = function () {
-    return data;
-  };
-
-  return data;
-}
-
 var _Twig = require("./core/Twig");
+
+let AbstractProvider = require('slix-app').AbstractProvider;
 
 let pathLib = require('path');
 
-class TwigProvider extends _AbstractProvider().default {
+class TwigProvider extends AbstractProvider {
   /**
    * @param {Slix} App
    **/

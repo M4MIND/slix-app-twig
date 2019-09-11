@@ -1,4 +1,4 @@
-import AbstractEvent from "slix-app/dist/api/AbstractEvent";
+let AbstractEvent = require('slix-app').AbstractEvent;
 
 export default class EventRenderingPreparation extends AbstractEvent {
     constructor(request = null, data = {}) {
