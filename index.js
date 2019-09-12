@@ -1,1 +1,1 @@
-module.exports = require('./dist/TwigProvider');
+module.exports = require('./dist/TwigProvider').default;
