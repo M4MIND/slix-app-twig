@@ -20,7 +20,9 @@ class Twig {
    * */
   constructor(config) {
     _defineProperty(this, "render", async (file, values = {}) => {
-      values = this.app.dispatch(_TwigEvent.default.RENDERING_PREPARATION, new _EventRenderingPreparation.default(null, values));
+      let $event = new _EventRenderingPreparation.default(null, values);
+      await this.app.dispatch(_TwigEvent.default.RENDERING_PREPARATION, $event);
+      values = $event.data;
       return await new Promise((resolve, reject) => {
         let path;
 

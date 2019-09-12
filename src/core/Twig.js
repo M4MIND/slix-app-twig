@@ -18,8 +18,11 @@ export default class Twig {
     }
 
     render = async (file, values = {}) => {
-        values = await this.app.dispatch(TwigEvent.RENDERING_PREPARATION, new EventRenderingPreparation(null, values));
-        console.dir(values);
+        let $event = new EventRenderingPreparation(null, values);
+
+        await this.app.dispatch(TwigEvent.RENDERING_PREPARATION, $event);
+
+        values = $event.data;
         return await new Promise((resolve, reject) => {
             let path;
 
