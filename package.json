@@ -1,5 +1,5 @@
 {
-  "name": "slix-twig",
+  "name": "slix-app-twig",
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
