@@ -17,10 +17,12 @@ export default class Twig {
         twigLib.cache(config.cache);
     }
 
-    async render(file, values = {}) {
+    render = async (file, values = {}) => {
         values = this.app.dispatch(TwigEvent.RENDERING_PREPARATION, new EventRenderingPreparation(null, values));
 
         return await new Promise((resolve, reject) => {
+            let path;
+
             if (this.path) {
                 path = pathLib.join(this.path, file);
             }
