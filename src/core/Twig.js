@@ -17,7 +17,9 @@ export default class Twig {
         twigLib.cache(config.cache);
     }
 
-    render = async (file, values = {}) => {
+    render = async (params = {}, values = {}) => {
+        let file = params.file || params.fullPath;
+
         let $event = new EventRenderingPreparation(null, values);
 
         await this.app.dispatch(TwigEvent.RENDERING_PREPARATION, $event);
@@ -26,7 +28,7 @@ export default class Twig {
         return await new Promise((resolve, reject) => {
             let path;
 
-            if (this.path) {
+            if (this.path && !params.fullPath) {
                 path = pathLib.join(this.path, file);
             }
 

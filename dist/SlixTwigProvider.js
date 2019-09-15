@@ -10,7 +10,7 @@ let AbstractProvider = require('slix-app').AbstractProvider;
 
 let pathLib = require('path');
 
-class TwigProvider extends AbstractProvider {
+class SlixTwigProvider extends AbstractProvider {
   /**
    * @param {Slix} App
    **/
@@ -39,4 +39,4 @@ class TwigProvider extends AbstractProvider {
 
 }
 
-exports.default = TwigProvider;
+exports.default = SlixTwigProvider;

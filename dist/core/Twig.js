@@ -19,14 +19,15 @@ class Twig {
    * @param {{app: Slix, path: string, cache: boolean, typeFile: string}} config
    * */
   constructor(config) {
-    _defineProperty(this, "render", async (file, values = {}) => {
+    _defineProperty(this, "render", async (params = {}, values = {}) => {
+      let file = params.file || params.fullPath;
       let $event = new _EventRenderingPreparation.default(null, values);
       await this.app.dispatch(_TwigEvent.default.RENDERING_PREPARATION, $event);
       values = $event.data;
       return await new Promise((resolve, reject) => {
         let path;
 
-        if (this.path) {
+        if (this.path && !params.fullPath) {
           path = pathLib.join(this.path, file);
         }
 
