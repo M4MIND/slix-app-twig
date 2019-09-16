@@ -18,18 +18,13 @@ export default class Twig {
     }
 
     render = async (params = {}, values = {}) => {
-        if (typeof params === 'object') {
-            let file = params.file || params.fullPath;
-        }
-        else {
-            let file = params;
-        }
-
+        let file = typeof params  === "object" ? params.file || params.fullPath : params;
         let $event = new EventRenderingPreparation(null, values);
 
         await this.app.dispatch(TwigEvent.RENDERING_PREPARATION, $event);
 
         values = $event.data;
+
         return await new Promise((resolve, reject) => {
             let path;
 

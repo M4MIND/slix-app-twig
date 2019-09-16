@@ -20,12 +20,7 @@ class Twig {
    * */
   constructor(config) {
     _defineProperty(this, "render", async (params = {}, values = {}) => {
-      if (typeof params === 'object') {
-        let file = params.file || params.fullPath;
-      } else {
-        let file = params;
-      }
-
+      let file = typeof params === "object" ? params.file || params.fullPath : params;
       let $event = new _EventRenderingPreparation.default(null, values);
       await this.app.dispatch(_TwigEvent.default.RENDERING_PREPARATION, $event);
       values = $event.data;
