@@ -18,7 +18,12 @@ export default class Twig {
     }
 
     render = async (params = {}, values = {}) => {
-        let file = params.file || params.fullPath;
+        if (typeof params === 'object') {
+            let file = params.file || params.fullPath;
+        }
+        else {
+            let file = params;
+        }
 
         let $event = new EventRenderingPreparation(null, values);
 
