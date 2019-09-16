@@ -1,11 +1,11 @@
 export class Slix {
     public twig: Twig;
 
-    render(path: { file?: string, fullPath?: string } | string, params: object): Promise<Response>;
+    render(path: { file?: string, fullPath?: string } | string, params?: object): Promise<Response>;
 }
 
 export class Twig {
-    render(path: { file?: string, fullPath?: string } | string, params: object): Promise<Response>;
+    render(path: { file?: string, fullPath?: string } | string, params?: object): Promise<Response>;
 }
 
 export class Response {

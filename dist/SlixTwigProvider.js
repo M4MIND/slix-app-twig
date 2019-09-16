@@ -14,13 +14,7 @@ class SlixTwigProvider extends AbstractProvider {
   /**
    * @param {Slix} App
    **/
-  registration(App) {
-    App.setParam(this.getName(), {
-      "path": "/views/",
-      "cache": false,
-      "typeFile": ".twig"
-    });
-  }
+  registration(App) {}
   /**
    * @param {Slix} App
    * */
